@@ -28,9 +28,6 @@ Classification Report:
    macro avg       0.96      0.96      0.96      1219
 weighted avg       0.96      0.96      0.96      1219
 
-Confusion Matrix:
-[[623  24]
- [ 27 545]]
 
 The output from the Decision Tree
 TESTING RESULTS:
@@ -45,11 +42,6 @@ Classification Report:
     accuracy                           1.00      1219
    macro avg       1.00      1.00      1.00      1219
 weighted avg       1.00      1.00      1.00      1219
-
-Confusion Matrix:
-[[647   0]
- [  0 572]]
-
 
 
 The output from the Random Forest
@@ -66,10 +58,6 @@ Classification Report:
    macro avg       1.00      1.00      1.00      1219
 weighted avg       1.00      1.00      1.00      1219
 
-Confusion Matrix:
-[[647   0]
- [  0 572]]
-
 
 This is the output with the neural network
 model_loss, model_accuracy = nn.evaluate(X_test_scaled,y_test,verbose=2) print(f"Loss: {model_loss}, Accuracy: {model_accuracy}") 
@@ -85,27 +73,27 @@ The method to measure multicollinearity is called the variance inflation factor 
 According National Library of Medicine, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6713981/, if the VIF is greater than five, than a correlation is present. 
 
                    variable         VIF
-0                  cap-shape    5.463186
-1                cap-surface    3.904712
-2                  cap-color    5.950600
-3                    bruises    7.984231
-4                       odor    8.918271
-5            gill-attachment  256.122838
-6               gill-spacing    4.534113
-7                  gill-size    5.758180
-8                 gill-color    6.284702
-9                stalk-shape    9.243136
-10                stalk-root    8.129864
-11  stalk-surface-above-ring   11.707764
-12  stalk-surface-below-ring   11.768772
-13    stalk-color-above-ring   17.163156
-14    stalk-color-below-ring   17.215182
-15                veil-color  280.123888
-16               ring-number   65.370463
-17                 ring-type   13.429124
-18         spore-print-color   16.937589
-19                population   21.434074
-20                   habitat    2.800932
+                  cap-shape    5.463186
+                cap-surface    3.904712
+                  cap-color    5.950600
+                    bruises    7.984231
+                       odor    8.918271
+            gill-attachment  256.122838
+               gill-spacing    4.534113
+                  gill-size    5.758180
+                 gill-color    6.284702
+                stalk-shape    9.243136
+                stalk-root    8.129864
+    stalk-surface-above-ring   11.707764
+    stalk-surface-below-ring   11.768772
+    stalk-color-above-ring   17.163156
+    stalk-color-below-ring   17.215182
+                veil-color  280.123888
+               ring-number   65.370463
+                 ring-type   13.429124
+         spore-print-color   16.937589
+               population   21.434074
+                   habitat    2.800932
 
 All the variables correlated to one another. Remember what the dataset is, it’s a list of mushroom species categorized by its features. 
 So why wouldn’t features of a mushroom be correlated to one another.Let us also consider species of mushrooms being related to one another. 
@@ -124,12 +112,10 @@ Classification Report:
            1       0.75      0.98      0.85       972
 
     accuracy                           0.84      2031
-   macro avg       0.86      0.84      0.83      2031
-weighted avg       0.87      0.84      0.83      2031
+    macro avg       0.86      0.84      0.83      2031
+    weighted avg       0.87      0.84      0.83      2031
 
-Confusion Matrix:
-[[744 315]
- [ 18 954]]
+
 DecisionTree
 
 Test RESULTS:
@@ -143,13 +129,9 @@ Classification Report:
            1       0.63      0.80      0.70       972
 
     accuracy                           0.68      2031
-   macro avg       0.69      0.68      0.67      2031
-weighted avg       0.69      0.68      0.67      2031
+    macro avg       0.69      0.68      0.67      2031
+    weighted avg       0.69      0.68      0.67      2031
 
-
-Confusion Matrix:
-[[597 462]
- [196 776]]
 
 Random Forest
 Test RESULTS:
@@ -163,13 +145,10 @@ Classification Report:
            1       0.59      0.90      0.71       972
 
     accuracy                           0.65      2031
-   macro avg       0.71      0.66      0.64      2031
-weighted avg       0.71      0.65      0.63      2031
+    macro avg       0.71      0.66      0.64      2031
+    weighted avg       0.71      0.65      0.63      2031
 
 
-Confusion Matrix:
-[[445 614]
- [ 93 879]]
 
 Neural Network
 model_loss, model_accuracy = nn.evaluate(X_test_scaled,y_test,verbose=2) print(f"Loss: {model_loss}, Accuracy: {model_accuracy}") 
