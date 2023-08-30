@@ -19,14 +19,15 @@ TEST RESULTS:
 
 Accuracy Score: 0.9581624282198523
 Classification Report: 
+              
               precision    recall  f1-score   support
 
            0       0.96      0.96      0.96       647
            1       0.96      0.95      0.96       572
 
     accuracy                           0.96      1219
-   macro avg       0.96      0.96      0.96      1219
-weighted avg       0.96      0.96      0.96      1219
+    macro avg       0.96      0.96      0.96      1219
+    weighted avg       0.96      0.96      0.96      1219
 
 
 The output from the Decision Tree
@@ -34,14 +35,15 @@ TESTING RESULTS:
 
 Accuracy Score: 100.0
 Classification Report:
-              precision    recall  f1-score   support
+               
+               precision    recall  f1-score   support
 
            0       1.00      1.00      1.00       647
            1       1.00      1.00      1.00       572
 
     accuracy                           1.00      1219
-   macro avg       1.00      1.00      1.00      1219
-weighted avg       1.00      1.00      1.00      1219
+    macro avg       1.00      1.00      1.00      1219
+    weighted avg       1.00      1.00      1.00      1219
 
 
 The output from the Random Forest
@@ -49,14 +51,15 @@ TESTING RESULTS:
 
 Accuracy Score: 100.0
 Classification Report:
+
               precision    recall  f1-score   support
 
            0       1.00      1.00      1.00       647
            1       1.00      1.00      1.00       572
 
     accuracy                           1.00      1219
-   macro avg       1.00      1.00      1.00      1219
-weighted avg       1.00      1.00      1.00      1219
+    macro avg       1.00      1.00      1.00      1219
+    weighted avg       1.00      1.00      1.00      1219
 
 
 This is the output with the neural network
@@ -106,6 +109,7 @@ TEST RESULTS:
 Accuracy Score: 0.8360
 
 Classification Report:
+              
               precision    recall  f1-score   support
 
            0       0.98      0.70      0.82      1059
@@ -123,6 +127,7 @@ Test RESULTS:
 Accuracy Score: 0.6760
 
 Classification Report:
+              
               precision    recall  f1-score   support
 
            0       0.75      0.56      0.64      1059
@@ -139,6 +144,7 @@ Test RESULTS:
 Accuracy Score: 0.6519
 
 Classification Report:
+              
               precision    recall  f1-score   support
 
            0       0.83      0.42      0.56      1059
