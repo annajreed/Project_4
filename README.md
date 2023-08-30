@@ -26,8 +26,8 @@ Classification Report:
            1       0.96      0.95      0.96       572
 
     accuracy                           0.96      1219
-    macro avg       0.96      0.96      0.96      1219
-    weighted avg       0.96      0.96      0.96      1219
+    macro avg      0.96      0.96      0.96      1219
+    weighted avg   0.96      0.96      0.96      1219
 
 
 The output from the Decision Tree
@@ -42,8 +42,8 @@ Classification Report:
            1       1.00      1.00      1.00       572
 
     accuracy                           1.00      1219
-    macro avg       1.00      1.00      1.00      1219
-    weighted avg       1.00      1.00      1.00      1219
+    macro avg       1.00      1.00     1.00      1219
+    weighted avg    1.00      1.00     1.00      1219
 
 
 The output from the Random Forest
@@ -58,8 +58,8 @@ Classification Report:
            1       1.00      1.00      1.00       572
 
     accuracy                           1.00      1219
-    macro avg       1.00      1.00      1.00      1219
-    weighted avg       1.00      1.00      1.00      1219
+    macro avg       1.00      1.00     1.00      1219
+    weighted avg    1.00      1.00     1.00      1219
 
 
 This is the output with the neural network
@@ -75,18 +75,18 @@ Multicollinearity is when variables are highly correlated with each other. The c
 The method to measure multicollinearity is called the variance inflation factor or VIF for short.
 According National Library of Medicine, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6713981/, if the VIF is greater than five, than a correlation is present. 
 
-                   variable         VIF
-                  cap-shape    5.463186
-                cap-surface    3.904712
-                  cap-color    5.950600
-                    bruises    7.984231
-                       odor    8.918271
-            gill-attachment  256.122838
-               gill-spacing    4.534113
-                  gill-size    5.758180
-                 gill-color    6.284702
-                stalk-shape    9.243136
-                stalk-root    8.129864
+                    variable         VIF
+                   cap-shape    5.463186
+                 cap-surface    3.904712
+                   cap-color    5.950600
+                     bruises    7.984231
+                        odor    8.918271
+             gill-attachment  256.122838
+                gill-spacing    4.534113
+                   gill-size    5.758180
+                  gill-color    6.284702
+                 stalk-shape    9.243136
+                 stalk-root    8.129864
     stalk-surface-above-ring   11.707764
     stalk-surface-below-ring   11.768772
     stalk-color-above-ring   17.163156
@@ -95,7 +95,7 @@ According National Library of Medicine, https://www.ncbi.nlm.nih.gov/pmc/article
                ring-number   65.370463
                  ring-type   13.429124
          spore-print-color   16.937589
-               population   21.434074
+                population   21.434074
                    habitat    2.800932
 
 All the variables correlated to one another. Remember what the dataset is, it’s a list of mushroom species categorized by its features. 
@@ -116,8 +116,8 @@ Classification Report:
            1       0.75      0.98      0.85       972
 
     accuracy                           0.84      2031
-    macro avg       0.86      0.84      0.83      2031
-    weighted avg       0.87      0.84      0.83      2031
+    macro avg       0.86      0.84     0.83      2031
+    weighted avg    0.87      0.84     0.83      2031
 
 
 DecisionTree
@@ -134,8 +134,8 @@ Classification Report:
            1       0.63      0.80      0.70       972
 
     accuracy                           0.68      2031
-    macro avg       0.69      0.68      0.67      2031
-    weighted avg       0.69      0.68      0.67      2031
+    macro avg       0.69     0.68      0.67      2031
+    weighted avg    0.69     0.68      0.67      2031
 
 
 Random Forest
@@ -151,8 +151,8 @@ Classification Report:
            1       0.59      0.90      0.71       972
 
     accuracy                           0.65      2031
-    macro avg       0.71      0.66      0.64      2031
-    weighted avg       0.71      0.65      0.63      2031
+    macro avg       0.71      0.66     0.64      2031
+    weighted avg    0.71      0.65     0.63      2031
 
 
 
